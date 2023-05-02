@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function mijnfunctie(){
+            var denaam = document.getElementById("deinvoer").value;
+            if(denaam != "fred"){
+                document.getElementById("resultaat").innerHTML = "Welkom: "+ denaam;
+            }
+            else{
+                document.getElementById("resultaat").innerHTML = "Doei";
+                document.getElementById("resultaat").style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input id="deinvoer">
+    <button onclick="mijnfunctie()">Klik hier</button>
+    <div id="resultaat"> Hier komt resultaat</div>
+</body>
+</html>
